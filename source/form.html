@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="body page__body">
+    <header class="page-header body__page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны">
+      </a>
+      <nav class="main-navigation page-header__main-navigation">
+        <button class="main-navigation--toggle" type="button">
+          <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
+        </button>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">Главная</li>
+          <li class="main-navigation__item">Фото и видео</li>
+          <li class="main-navigation__item">Форма отзыва</li>
+          <li class="main-navigation__item">HTML ACADEMY</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main body__page-main">
+      <section class="intro page-main__intro intro--form">
+        <div class="intro__photo-wrapper">
+          <img src="img/main-photo.jpg" width="901" height="389" alt="Седона">
+        </div>
+        <p class="intro__primary-description">Оставьте свой отзыв</p>
+        <p class="intro__secondary-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form class="feedback page-main__feedback">
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+          <label class="feedback-fieldset__label">Представьтесь:</label>
+          <div class="feedback-fieldset__input-wrapper">
+            <label class="feedback-fieldset__label" for="feedback-fieldset__first-name">Имя*:</label>
+            <input class="feedback-fieldset__input" type="text" placeholder="Петр" id="feedback-fieldset__first-name">
+          </div>
+          <div class="feedback-fieldset__input-wrapper">
+            <label class="feedback-fieldset__label" for="feedback-fieldset__last-name">Фамилия*:</label>
+            <input class="feedback-fieldset__input" type="text" placeholder="Иванов" id="feedback-fieldset__last-name">
+          </div>
+          <div class="feedback-fieldset__input-wrapper">
+            <label class="feedback-fieldset__label" for="feedback-fieldset__middle-name">Отчество</label>
+            <input class="feedback-fieldset__input" type="text" placeholder="Александрович" id="feedback-fieldset__middle-name">
+          </div>
+        </fieldset>
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+          <label class="feedback-fieldset__label">Контактная информация:</label>
+          <div class="feedback-fieldset__input-wrapper">
+            <label class="feedback-fieldset__label" for="feedback-fieldset__phone">Контактный телефон*:</label>
+            <input class="feedback-fieldset__input" type="tel" placeholder="Введите телефон" id="feedback-fieldset__phone">
+          </div>
+          <div class="feedback-fieldset__input-wrapper">
+            <label class="feedback-fieldset__label" for="feedback-fieldset__email">Электронная почта*:</label>
+            <input class="feedback-fieldset__input" type="email" placeholder="Введите e-mail" id="feedback-fieldset__email">
+          </div>
+        </fieldset>
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+          <label class="feedback-fieldset__label">Общее впечатление:</label>
+          <ul class="feedback-fieldset__list">
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__positive">Скорее положительное</label>
+                <input class="feedback-fieldset__input" type="radio" value="positive" id="feedback-fieldset__positive">
+              </div>
+            </li>
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__labe" for="feedback-fieldset__negative">Скорее отрицательное</label>
+                <input class="feedback-fieldset__input" type="radio" value="negative" id="feedback-fieldset__negative">
+              </div>
+            </li>
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__difficult-to-answer">Затрудняюсь ответить</label>
+                <input class="feedback-fieldset__input" type="radio" value="difficult-to-answer" id="feedback-fieldset__difficult-to-answer">
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+          <label class="feedback-fieldset__label">Посещенные достопримечательности:</label>
+          <ul class="feedback-fieldset__list">
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__devils-bridge">Мост Дьявола</label>
+                <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__devils-bridge">
+              </div>
+            </li>
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__bell-mountain">Гора-Колокол</label>
+                <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__bell-mountain">
+              </div>
+            </li>
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__slide-park">Слайд-парк</label>
+                <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__slide-park">
+              </div>
+            </li>
+            <li class="feedback-fieldset__item">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__red-rocks">Красные скалы</label>
+                <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__red-rocks">
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+          <label class="feedback-fieldset__label">Опишите свои эмоции:</label>
+            <div class="feedback-field feedback-fieldset__feedback-fieldset">
+              <input class="feedback-fieldset__input" type="text" placeholder="Опишите подробно все свои восторги" id="feedback-fieldset__description">
+            </div>
+        </fieldset>
+        <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer body__page-footer">
+      <p class="page-footer__follow">#VISITSEDONA</p>
+      <div class="social page-footer__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright page-footer__copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
