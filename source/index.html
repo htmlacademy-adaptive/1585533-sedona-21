@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic&amp;display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body page__body">
     <header class="page-header body__page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны">
-      </a>
+      <div class="page-header__logo">
+        <a href=""><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+      </div>
       <nav class="main-navigation page-header__main-navigation">
-        <button class="main-navigation--toggle" type="button">
+        <button class="main-navigation__menu-button main-navigation--toggle" type="button">
           <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">Главная</li>
+          <li class="main-navigation__item main-navigation__item--active">Главная</li>
           <li class="main-navigation__item">Фото и видео</li>
           <li class="main-navigation__item">Форма отзыва</li>
           <li class="main-navigation__item">HTML ACADEMY</li>
@@ -23,7 +25,7 @@
       </nav>
     </header>
     <main class="page-main body__page-main">
-      <section class="intro page-main__intro intro--index">
+      <section class="intro page-main__intro">
         <h1 class=visually-hidden>Седона</h1>
         <div class="intro__photo-wrapper">
           <img src="img/main-photo.jpg" width="901" height="389" alt="Седона">
@@ -40,7 +42,7 @@
         <div class="advantage-photo advantages__advantage-photo">
           <img src="img/city-photo1.jpg" width="320" height="260" alt="Фотография города">
         </div>
-        <div class="advantages__infrastructures">
+        <div class="infrastructures advantages__infrastructures">
           <div class="infrastructure infrastructures__infrastructure infrastructure--apartment">
             <p class="infrastructure__title">Жилье</p>
             <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
