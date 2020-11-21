@@ -1,6 +1,14 @@
 @import "variables.scss";
 @import "body/body.scss";
 @import "copyright/__text/copyright__text.scss";
+@import "feedback/feedback.scss";
+@import "feedback/__submit-button/feedback__submit-button.scss";
+@import "feedback-fieldset/__input/feedback-fieldset__input.scss";
+@import "feedback-fieldset/__input-wrapper/feedback-fieldset__input-wrapper.scss";
+@import "feedback-fieldset/__intro-label/feedback-fieldset__intro-label.scss";
+@import "feedback-fieldset/__label/feedback-fieldset__label.scss";
+@import "feedback-fieldset/__list/feedback-fieldset__list.scss";
+@import "feedback-fieldset/feedback-fieldset.scss";
 @import "hotel-search/__description/hotel-search__description.scss";
 @import "hotel-search/__search-button/hotel-search__search-button.scss";
 @import "hotel-search/__title/hotel-search__title.scss";
