@@ -25,6 +25,11 @@
 @import "page-header/__logo/page-header__logo.scss";
 @import "page-footer/__follow/page-footer__follow.scss";
 @import "page-footer/page-footer.scss";
+@import "photo/photo.scss";
+@import "photo/__author/photo__author.scss";
+@import "photo/__like/photo__like.scss";
+@import "photo/__like-counter/photo__like-counter.scss";
+@import "photo/__name/photo__name.scss";
 @import "primary-advantage/__description/primary-advantage__description.scss";
 @import "primary-advantage/__title/primary-advantage__title.scss";
 @import "primary-advantage/primary-advantage.scss";
@@ -32,4 +37,7 @@
 @import "secondary-advantage/__title/secondary-advantage__title.scss";
 @import "secondary-advantage/secondary-advantage.scss";
 @import "social/__list/social__list.scss";
+@import "video/video.css";
+@import "video/__header/video__header.scss";
+@import "video/__description/video__description.scss";
 @import "visually-hidden/visually-hidden.scss";
