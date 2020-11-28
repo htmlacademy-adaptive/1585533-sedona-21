@@ -1,5 +1,14 @@
 @import "variables.scss";
+@import "advantages/advantages.scss";
+@import "advantages/__advantage-photo/_left/advantages__advantage-photo--left.scss";
+@import "advantages/__advantage-photo/_right/advantages__advantage-photo--right.scss";
+@import "advantages/__advantage-photo/_row3/advantages__advantage-photo--row3.scss";
+@import "advantages/__infrastructures/advantages__infrastructures.scss";
+@import "advantages/__primary-advantage/_left/advantages__primary-advantage--left.scss";
+@import "advantages/__primary-advantage/_right/advantages__primary-advantage--right.scss";
+@import "advantages/__secondary-advantages/advantages__secondary-advantages.scss";
 @import "body/body.scss";
+@import "copyright/copyright.scss";
 @import "copyright/__text/copyright__text.scss";
 @import "feedback/feedback.scss";
 @import "feedback/__submit-button/feedback__submit-button.scss";
@@ -9,11 +18,14 @@
 @import "feedback-fieldset/__label/feedback-fieldset__label.scss";
 @import "feedback-fieldset/__list/feedback-fieldset__list.scss";
 @import "feedback-fieldset/feedback-fieldset.scss";
+@import "hotel-search/hotel-search.scss";
 @import "hotel-search/__description/hotel-search__description.scss";
 @import "hotel-search/__search-button/hotel-search__search-button.scss";
 @import "hotel-search/__title/hotel-search__title.scss";
 @import "infrastructures/infrastructures.scss";
+@import "infrastructure/infrastructure.scss";
 @import "infrastructure/__description/infrastructure__description.scss";
+@import "infrastructure/__description-wrapper/infrastructure__description_wrapper.scss";
 @import "infrastructure/__title/infrastructure__title.scss";
 @import "intro/__description/intro__description.scss";
 @import "intro/__header/intro__header.scss";
@@ -22,6 +34,7 @@
 @import "main-navigation/__list/main-navigation__list.scss";
 @import "main-navigation/main-navigation.scss";
 @import "page-header/page-header.scss";
+@import "page-header/__main-navigation/page-header__main-navigation.scss";
 @import "page-header/__logo/page-header__logo.scss";
 @import "page-footer/__follow/page-footer__follow.scss";
 @import "page-footer/page-footer.scss";
@@ -36,6 +49,8 @@
 @import "secondary-advantage/__description/secondary-advantage__description.scss";
 @import "secondary-advantage/__title/secondary-advantage__title.scss";
 @import "secondary-advantage/secondary-advantage.scss";
+@import "secondary-advantages/secondary-advantages.scss";
+@import "social/__link/social__link.scss";
 @import "social/__list/social__list.scss";
 @import "video/video.css";
 @import "video/__header/video__header.scss";

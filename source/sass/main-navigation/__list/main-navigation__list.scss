@@ -1,4 +1,20 @@
 .main-navigation__list {
   display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-navigation__list {
+    flex-direction: column;
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-navigation__list {
+    flex-direction: row;
+    align-items: center;
+  }
 }

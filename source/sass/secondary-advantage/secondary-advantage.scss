@@ -1,4 +1,6 @@
 .secondary-advantage {
+  display: flex;
+  flex-direction: column;
   color: $color;
   background-color: $secondary-advantage-background-color;
 }

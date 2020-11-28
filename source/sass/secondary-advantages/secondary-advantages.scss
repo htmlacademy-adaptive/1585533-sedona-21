@@ -1,0 +1,6 @@
+@media (min-width: $tablet-min-width) {
+  .secondary-advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

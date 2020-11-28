@@ -13,14 +13,14 @@
         <a href=""><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
       </div>
       <nav class="main-navigation page-header__main-navigation">
-        <button class="main-navigation__menu-button main-navigation--toggle" type="button">
+        <button class="main-navigation__menu-button" type="button">
           <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--active">Главная</li>
-          <li class="main-navigation__item">Фото и видео</li>
-          <li class="main-navigation__item">Форма отзыва</li>
-          <li class="main-navigation__item">HTML ACADEMY</li>
+          <li class="main-navigation__item main-navigation__item--left main-navigation__item--active">Главная</li>
+          <li class="main-navigation__item main-navigation__item--left">Фото и видео</li>
+          <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator">Форма отзыва</li>
+          <li class="main-navigation__item main-navigation__item--right">HTML ACADEMY</li>
         </ul>
       </nav>
     </header>
@@ -34,34 +34,49 @@
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="advantages page-main__advantages">
-        <div class="primary-advantage advantages__primary-advantage">
+        <div class="primary-advantage advantages__primary-advantage--left">
           <p class="primary-advantage__title">Настоящий городок</p>
           <p class="primary-advantage__description">— №1 —</p>
           <p class="primary-advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <div class="advantage-photo advantages__advantage-photo">
+        <div class="advantage-photo advantages__advantage-photo--right">
           <img src="img/city-photo1.jpg" width="320" height="260" alt="Фотография города">
         </div>
         <div class="infrastructures advantages__infrastructures">
-          <div class="infrastructure infrastructures__infrastructure infrastructure--apartment">
-            <p class="infrastructure__title">Жилье</p>
-            <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <div class="infrastructure infrastructures__infrastructure">
+            <div class="infrastructure__icon">
+              <img src="img/icon-house.svg" width="39" height="37" alt="Иконка жилья">
+            </div>
+            <div class="infrastructure__description_wrapper">
+              <p class="infrastructure__title">Жилье</p>
+              <p class="infrastructure__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
           </div>
-          <div class="infrastructure infrastructures__infrastructure infrastructure--souvenir">
-            <p class="infrastructure__title">Сувениры</p>
-            <p class="infrastructure__description">Не только китайского, но и местного производства!</p>
+          <div class="infrastructure infrastructures__infrastructure">
+            <div class="infrastructure__icon">
+              <img src="img/icon-gift.svg" width="32" height="38" alt="Иконка жилья">
+            </div>
+            <div class="infrastructure__description_wrapper">
+              <p class="infrastructure__title">Сувениры</p>
+              <p class="infrastructure__description">Не только китайского, но и местного производства!</p>
+            </div>
           </div>
-          <div class="infrastructure infrastructures__infrastructure infrastructure--food">
-            <p class="infrastructure__title">Еда</p>
-            <p class="infrastructure__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+          <div class="infrastructure infrastructures__infrastructure">
+            <div class="infrastructure__icon">
+              <img src="img/icon-burger.svg" width="40" height="35" alt="Иконка еды">
+            </div>
+            <div class="infrastructure__description_wrapper">
+              <p class="infrastructure__title">Еда</p>
+              <p class="infrastructure__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </div>
           </div>
         </div>
-        <div class="primary-advantage advantages__primary-advantage">
+        <div class="primary-advantage advantages__primary-advantage--right">
           <p class="primary-advantage__title">Там есть мост дьявола</p>
           <p class="primary-advantage__description">— №2 —</p>
           <p class="primary-advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <div class="advantage-photo advantages__advantage-photo">
+        <div class="advantage-photo advantages__advantage-photo--left advantages__advantage-photo--row3">
           <img src="img/bridge-photo.jpg" width="320" height="260" alt="Фотография моста">
         </div>
         <div class="secondary-advantages advantages__secondary-advantages">
@@ -96,13 +111,19 @@
       <div class="social page-footer__social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-twitter.svg" width=15 height=17 alt="twitter">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-facebook.svg" width=9 height=19 alt="facebook">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-youtube.svg" width=20 height=14 alt="youtube">
+            </a>
           </li>
         </ul>
       </div>

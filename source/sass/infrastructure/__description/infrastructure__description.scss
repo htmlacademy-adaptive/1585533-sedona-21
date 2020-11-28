@@ -1,6 +1,17 @@
 .infrastructure__description {
   font-size: 18px;
   line-height: 26px;
-  text-align: left;
   text-transform: uppercase;
+}
+
+@media (max-width: $mobile-max-width) {
+  .infrastructure__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .infrastructure__description {
+    text-align: center;
+  }
 }
