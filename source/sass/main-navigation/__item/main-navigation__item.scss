@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .main-navigation__item {
     color: $inverted-color;
     background-color: $main-navigation-mobile-background-color;
@@ -30,7 +30,7 @@
   /*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);*/
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .main-navigation__item {
     font-size: 14px;
     line-height: 26px;

@@ -1,11 +1,11 @@
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .page-footer {
     display: flex;
     flex-direction: column;
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .page-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

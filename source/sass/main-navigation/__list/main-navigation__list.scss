@@ -5,14 +5,14 @@
   width: 100%;
 }
 
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .main-navigation__list {
     flex-direction: column;
     display: none;
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .main-navigation__list {
     flex-direction: row;
     align-items: center;

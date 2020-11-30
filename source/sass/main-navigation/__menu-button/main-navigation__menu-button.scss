@@ -1,11 +1,11 @@
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .main-navigation__menu-button {
     justify-self: flex-end;
     margin-left: auto;
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .main-navigation__menu-button {
     display: none;
   }

@@ -4,13 +4,13 @@
   text-transform: uppercase;
 }
 
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .infrastructure__description {
     text-align: left;
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .infrastructure__description {
     text-align: center;
   }

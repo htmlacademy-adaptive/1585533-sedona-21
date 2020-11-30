@@ -1,4 +1,4 @@
-@media (max-width: $mobile-max-width) {
+@media (max-width: $table-width) {
   .infrastructure {
     display: flex;
     flex-direction: row;
@@ -6,7 +6,7 @@
   }
 }
 
-@media (min-width: $tablet-min-width) {
+@media (min-width: $tablet-width) {
   .infrastructure {
     display: flex;
     flex-direction: column;
