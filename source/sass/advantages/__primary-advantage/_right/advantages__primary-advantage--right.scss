@@ -1,0 +1,6 @@
+@media (min-width: $tablet-width) {
+  .advantages__primary-advantage--right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}

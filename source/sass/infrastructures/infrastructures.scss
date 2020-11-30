@@ -1,4 +1,13 @@
-.infrastructures {
-  display: flex;
-  flex-direction: column;
+@media (max-width: $table-width) {
+  .infrastructures {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .infrastructures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
