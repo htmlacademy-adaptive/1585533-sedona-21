@@ -1,8 +1,6 @@
-@media (max-width: $table-width) {
-  .infrastructures {
-    display: flex;
-    flex-direction: column;
-  }
+.infrastructures {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,8 +1,6 @@
-@media (max-width: $table-width) {
-  .page-footer {
-    display: flex;
-    flex-direction: column;
-  }
+.page-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {

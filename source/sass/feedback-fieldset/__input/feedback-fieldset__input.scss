@@ -1,5 +1,10 @@
 .feedback-fieldset__input {
+  font-family: $font-family;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  color: $color;
+  background-color: $feedback-field-background-color;
+  flex-grow: 1;
+  align-self: stretch;
 }

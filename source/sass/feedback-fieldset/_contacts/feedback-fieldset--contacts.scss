@@ -1,0 +1,7 @@
+@media (min-width: $desktop-width) {
+  .feedback-fieldset--contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

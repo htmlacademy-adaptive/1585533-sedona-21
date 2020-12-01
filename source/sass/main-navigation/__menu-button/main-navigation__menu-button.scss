@@ -1,8 +1,8 @@
-@media (max-width: $table-width) {
-  .main-navigation__menu-button {
-    justify-self: flex-end;
-    margin-left: auto;
-  }
+.main-navigation__menu-button {
+  justify-self: flex-end;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
