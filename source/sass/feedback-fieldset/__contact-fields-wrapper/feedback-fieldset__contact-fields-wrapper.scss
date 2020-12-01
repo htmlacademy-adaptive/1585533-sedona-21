@@ -1,0 +1,11 @@
+.feedback-fieldset__contact-fields-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-fieldset__contact-fields-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

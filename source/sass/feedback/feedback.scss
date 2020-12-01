@@ -2,3 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

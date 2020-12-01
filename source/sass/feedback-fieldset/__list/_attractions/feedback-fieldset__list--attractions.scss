@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .feedback-fieldset__list--attractions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-fieldset__list--attractions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

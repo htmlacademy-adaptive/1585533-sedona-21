@@ -1,0 +1,8 @@
+@media (min-width: $tablet-width) {
+  .feedback__feedback-fieldset--rate {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}

@@ -1,9 +1,7 @@
-@media (max-width: $table-width) {
-  .infrastructure {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
+.infrastructure {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 @media (min-width: $tablet-width) {

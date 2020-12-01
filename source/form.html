@@ -9,18 +9,18 @@
   </head>
   <body class="body page__body">
     <header class="page-header body__page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны">
-      </a>
+      <div class="page-header__logo">
+        <a href=""><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+      </div>
       <nav class="main-navigation page-header__main-navigation">
         <button class="main-navigation__menu-button" type="button">
           <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">Главная</li>
-          <li class="main-navigation__item">Фото и видео</li>
-          <li class="main-navigation__item">Форма отзыва</li>
-          <li class="main-navigation__item">HTML ACADEMY</li>
+          <li class="main-navigation__item main-navigation__item--left">Главная</li>
+          <li class="main-navigation__item main-navigation__item--left">Фото и видео</li>
+          <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator">Форма отзыва</li>
+          <li class="main-navigation__item main-navigation__item--right">HTML ACADEMY</li>
         </ul>
       </nav>
     </header>
@@ -33,7 +33,7 @@
         <p class="intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback page-main__feedback">
-        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset--name">
           <label class="feedback-fieldset__intro-label">Представьтесь:</label>
           <div class="feedback-fieldset__input-wrapper">
             <label class="feedback-fieldset__label" for="feedback-fieldset__first-name">Имя*:</label>
@@ -44,23 +44,25 @@
             <input class="feedback-fieldset__input" type="text" placeholder="Иванов" id="feedback-fieldset__last-name">
           </div>
           <div class="feedback-fieldset__input-wrapper">
-            <label class="feedback-fieldset__label" for="feedback-fieldset__middle-name">Отчество</label>
+            <label class="feedback-fieldset__label" for="feedback-fieldset__middle-name">Отчество:</label>
             <input class="feedback-fieldset__input" type="text" placeholder="Александрович" id="feedback-fieldset__middle-name">
           </div>
         </fieldset>
-        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+        <fieldset class="feedback-fieldset feedback-fieldset--contacts feedback__feedback-fieldset--contacts">
           <label class="feedback-fieldset__intro-label">Контактная информация:</label>
-          <div class="feedback-fieldset__input-wrapper">
-            <label class="feedback-fieldset__label" for="feedback-fieldset__phone">Контактный телефон*:</label>
-            <input class="feedback-fieldset__input" type="tel" placeholder="Введите телефон" id="feedback-fieldset__phone">
-          </div>
-          <div class="feedback-fieldset__input-wrapper">
-            <label class="feedback-fieldset__label" for="feedback-fieldset__email">Электронная почта*:</label>
-            <input class="feedback-fieldset__input" type="email" placeholder="Введите e-mail" id="feedback-fieldset__email">
+          <div class="feedback-fieldset__contact-fields-wrapper">
+            <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--contact">
+              <label class="feedback-fieldset__label" for="feedback-fieldset__phone">Контактный телефон*:</label>
+              <input class="feedback-fieldset__input" type="tel" placeholder="Введите телефон" id="feedback-fieldset__phone">
+            </div>
+            <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--contact">
+              <label class="feedback-fieldset__label" for="feedback-fieldset__email">Электронная почта*:</label>
+              <input class="feedback-fieldset__input" type="email" placeholder="Введите e-mail" id="feedback-fieldset__email">
+            </div>
           </div>
         </fieldset>
-        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
-          <label class="feedback-fieldset__intro-label">Общее впечатление:</label>
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset--rate">
+          <label class="feedback-fieldset__intro-label">Ваше общее впечатление:</label>
           <ul class="feedback-fieldset__list">
             <li class="feedback-fieldset__item">
               <div class="feedback-fieldset__input-wrapper">
@@ -82,9 +84,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
-          <label class="feedback-fieldset__intro-label">Посещенные достопримечательности:</label>
-          <ul class="feedback-fieldset__list">
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset--attractions">
+          <label class="feedback-fieldset__intro-label">Посещенные<br>достопримечательности:</label>
+          <ul class="feedback-fieldset__list feedback-fieldset__list--attractions">
             <li class="feedback-fieldset__item">
               <div class="feedback-fieldset__input-wrapper">
                 <label class="feedback-fieldset__label" for="feedback-fieldset__devils-bridge">Мост Дьявола</label>
@@ -111,10 +113,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-fieldset feedback__feedback-fieldset">
+        <fieldset class="feedback-fieldset feedback__feedback-fieldset--emotions">
           <label class="feedback-fieldset__intro-label">Опишите свои эмоции:</label>
             <div class="feedback-field feedback-fieldset__feedback-fieldset">
-              <input class="feedback-fieldset__input" type="text" placeholder="Опишите подробно все свои восторги" id="feedback-fieldset__description">
+              <textarea class="feedback-fieldset__input feedback-fieldset__input--textarea" rows=5 placeholder="Опишите подробно все свои восторги" id="feedback-fieldset__description"></textarea>
             </div>
         </fieldset>
         <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
@@ -125,13 +127,19 @@
       <div class="social page-footer__social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-twitter.svg" width=15 height=17 alt="twitter">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-facebook.svg" width=9 height=19 alt="facebook">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-youtube.svg" width=20 height=14 alt="youtube">
+            </a>
           </li>
         </ul>
       </div>
