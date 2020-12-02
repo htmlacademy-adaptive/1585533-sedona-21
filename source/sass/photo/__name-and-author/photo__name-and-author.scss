@@ -1,0 +1,10 @@
+.photo__name-and-author {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__name-and-author {
+    margin-right: auto;
+  }
+}

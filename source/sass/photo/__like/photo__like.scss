@@ -1,3 +1,15 @@
 .photo__like {
   display: flex;
 }
+
+.photo__like svg {
+  fill: $color;
+  opacity: 0.3;
+}
+
+@media (min-width: $desktop-width) {
+  .photo__like svg {
+    fill: $inverted-color;
+    opacity: 1;
+  }
+}

@@ -9,18 +9,18 @@
   </head>
   <body class="body page__body">
     <header class="page-header body__page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны">
-      </a>
+      <div class="page-header__logo">
+        <a href=""><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+      </div>
       <nav class="main-navigation page-header__main-navigation">
         <button class="main-navigation__menu-button" type="button">
           <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
         </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item">Главная</li>
-          <li class="main-navigation__item">Фото и видео</li>
-          <li class="main-navigation__item">Форма отзыва</li>
-          <li class="main-navigation__item">HTML ACADEMY</li>
+          <li class="main-navigation__item main-navigation__item--left">Главная</li>
+          <li class="main-navigation__item main-navigation__item--left">Фото и видео</li>
+          <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator">Форма отзыва</li>
+          <li class="main-navigation__item main-navigation__item--right">HTML ACADEMY</li>
         </ul>
       </nav>
     </header>
@@ -33,48 +33,72 @@
         <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="photo-section page-main__photo-section">
-        <div class="photo photo-section__photo">
+        <div class="photo photo--big photo-section__photo">
           <div class="photo__image">
             <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="">
           </div>
-          <p class="photo__name">Неродные просторы</p>
-          <p class="photo__author">Автор фото: Борис</p>
-          <div class="photo__like">
-            <img src="img/like-icon.svg" width="23" height="21" alt="лайк">
-            <span class="photo__like-counter">1350</span>
+          <div class="photo__caption">
+            <div class="photo__name-and-author">
+              <p class="photo__name">Неродные просторы</p>
+              <p class="photo__author">Автор фото: Борис</p>
+            </div>
+            <div class="photo__like">
+              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <span class="photo__like-counter">1350</span>
+            </div>
           </div>
         </div>
         <div class="photo photo-section__photo">
           <div class="photo__image">
             <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="">
           </div>
-          <p class="photo__name">Местная растительность</p>
-          <p class="photo__author">Автор фото: Сергей</p>
-          <div class="photo__like">
-            <img src="img/like-icon.svg" width="23" height="21" alt="лайк">
-            <span class="photo__like-counter">143</span>
+          <div class="photo__caption">
+            <div class="photo__name-and-author">
+              <p class="photo__name">Местная растительность</p>
+              <p class="photo__author">Автор фото: Сергей</p>
+            </div>
+            <div class="photo__like">
+              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <span class="photo__like-counter">143</span>
+            </div>
           </div>
         </div>
         <div class="photo photo-section__photo">
           <div class="photo__image">
             <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="">
           </div>
-          <p class="photo__name">Дорога на север</p>
-          <p class="photo__author">Автор фото: Петр</p>
-          <div class="photo__like">
-            <img src="img/like-icon.svg" width="23" height="21" alt="лайк">
-            <span class="photo__like-counter">96</span>
+          <div class="photo__caption photo__caption--dark">
+            <div class="photo__name-and-author">
+              <p class="photo__name">Дорога на север</p>
+              <p class="photo__author">Автор фото: Петр</p>
+            </div>
+            <div class="photo__like">
+              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <span class="photo__like-counter">96</span>
+            </div>
           </div>
         </div>
         <div class="photo photo-section__photo">
           <div class="photo__image">
             <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="">
           </div>
-          <p class="photo__name">Мост дьявола</p>
-          <p class="photo__author">Автор фото: Антон</p>
-          <div class="photo__like">
-            <img src="img/like-icon.svg" width="23" height="21" alt="лайк">
-            <span class="photo__like-counter">254</span>
+          <div class="photo__caption">
+            <div class="photo__name-and-author">
+              <p class="photo__name">Мост дьявола</p>
+              <p class="photo__author">Автор фото: Антон</p>
+            </div>
+            <div class="photo__like">
+              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <span class="photo__like-counter">254</span>
+            </div>
           </div>
         </div>
       </section>
@@ -91,13 +115,19 @@
       <div class="social page-footer__social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-twitter.svg" width=15 height=17 alt="twitter">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-facebook.svg" width=9 height=19 alt="facebook">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube"></a>
+            <a class="social__link" href="#">
+              <img src="img/icon-youtube.svg" width=20 height=14 alt="youtube">
+            </a>
           </li>
         </ul>
       </div>

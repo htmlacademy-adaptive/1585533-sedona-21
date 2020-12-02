@@ -1,0 +1,11 @@
+@media (min-width: $tablet-width) {
+  .photo__caption--dark {
+    background-color: $photo-caption-dark-background-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__caption--dark {
+    background-color: $text-over-photo-background-color;
+  }
+}

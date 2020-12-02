@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .photo--big {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo--big {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
