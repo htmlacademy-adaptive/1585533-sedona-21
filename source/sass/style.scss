@@ -50,10 +50,15 @@
 @import "page-footer/__follow/page-footer__follow.scss";
 @import "page-footer/page-footer.scss";
 @import "photo/photo.scss";
+@import "photo/_big/photo--big.scss";
 @import "photo/__author/photo__author.scss";
+@import "photo/__caption/photo__caption.scss";
+@import "photo/__caption/_dark/photo__caption--dark.scss";
 @import "photo/__like/photo__like.scss";
 @import "photo/__like-counter/photo__like-counter.scss";
 @import "photo/__name/photo__name.scss";
+@import "photo/__name-and-author/photo__name-and-author.scss";
+@import "photo-section/photo-section.scss";
 @import "primary-advantage/__description/primary-advantage__description.scss";
 @import "primary-advantage/__title/primary-advantage__title.scss";
 @import "primary-advantage/primary-advantage.scss";

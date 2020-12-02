@@ -1,0 +1,22 @@
+.photo__caption {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__caption {
+    flex-direction: row;
+    align-items: center;
+    background-color: $photo-caption-background-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__caption {
+    position: absolute;
+    bottom: 0;
+    color: $inverted-color;
+    background-color: $text-over-photo-background-color;
+  }
+}
