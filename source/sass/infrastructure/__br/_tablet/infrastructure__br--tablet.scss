@@ -1,0 +1,9 @@
+.infrastructure__br--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  br.infrastructure__br--tablet {
+    display: inline;
+  }
+}

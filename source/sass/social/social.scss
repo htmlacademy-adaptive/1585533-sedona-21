@@ -1,0 +1,9 @@
+.social {
+  margin-top: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: 0;
+  }
+}

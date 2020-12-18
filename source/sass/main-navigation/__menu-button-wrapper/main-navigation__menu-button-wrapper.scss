@@ -1,0 +1,11 @@
+.main-navigation__menu-button-wrapper {
+  position: relative;
+  height: 56px;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__menu-button-wrapper {
+    display: none;
+  }
+}

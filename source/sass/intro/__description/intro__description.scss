@@ -1,6 +1,20 @@
 .intro__description {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  color: $secondary-color;
+  margin-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__description {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__description {
+    margin-bottom: 41px;
+  }
 }

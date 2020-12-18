@@ -1,0 +1,9 @@
+.primary-advantage__br--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  br.primary-advantage__br--tablet {
+    display: inline;
+  }
+}

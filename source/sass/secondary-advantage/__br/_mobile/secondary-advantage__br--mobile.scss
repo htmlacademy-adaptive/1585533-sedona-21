@@ -1,0 +1,9 @@
+.secondary-advantage__br--mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width - 1) {
+  br.secondary-advantage__br--mobile {
+    display: inline;
+  }
+}

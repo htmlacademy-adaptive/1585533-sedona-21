@@ -1,0 +1,9 @@
+.hotel-search__br--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  br.hotel-search__br--desktop {
+    display: inline;
+  }
+}

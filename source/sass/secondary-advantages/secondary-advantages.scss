@@ -1,3 +1,8 @@
+.secondary-advantages {
+  color: $color;
+  background-color: $secondary-advantage-background-color;
+}
+
 @media (min-width: $tablet-width) {
   .secondary-advantages {
     display: grid;

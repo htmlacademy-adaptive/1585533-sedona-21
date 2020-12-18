@@ -4,4 +4,13 @@
   font-family: $font-family;
   color: $color;
   background-color: $background-color;
+  min-width: 320px;
+}
+
+@media (min-width: $desktop-width) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    background-color: $desktop-padding-color;
+  }
 }

@@ -1,0 +1,12 @@
+.main-navigation__close-button {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  z-index: 1;
+  background-color: $transparent;
+  border: none;
+}

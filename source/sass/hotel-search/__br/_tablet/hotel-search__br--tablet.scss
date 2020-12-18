@@ -1,0 +1,9 @@
+.hotel-search__br--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  br.hotel-search__br--tablet {
+    display: inline;
+  }
+}

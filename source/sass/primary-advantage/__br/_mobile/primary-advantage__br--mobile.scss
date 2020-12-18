@@ -1,0 +1,9 @@
+.primary-advantage__br--mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width - 1) {
+  br.primary-advantage__br--mobile {
+    display: inline;
+  }
+}

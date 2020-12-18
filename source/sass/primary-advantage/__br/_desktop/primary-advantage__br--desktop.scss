@@ -1,0 +1,9 @@
+.primary-advantage__br--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  br.primary-advantage__br--desktop {
+    display: inline;
+  }
+}

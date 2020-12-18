@@ -1,8 +1,10 @@
 .infrastructure__description {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: left;
   text-transform: uppercase;
+  color: $secondary-color;
+  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {

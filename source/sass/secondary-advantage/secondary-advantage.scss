@@ -1,6 +1,19 @@
 .secondary-advantage {
   display: flex;
   flex-direction: column;
-  color: $color;
-  background-color: $secondary-advantage-background-color;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.secondary-advantage:not(:last-child) {
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $secondary-advantage-line-color;
+}
+
+@media (min-width: $tablet-width) {
+  .secondary-advantage {
+    padding-top: 42px;
+    padding-bottom: 63px;
+  }
 }

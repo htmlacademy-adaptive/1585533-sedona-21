@@ -1,0 +1,9 @@
+.infrastructure__br--desktop {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  br.infrastructure__br--desktop {
+    display: inline;
+  }
+}
