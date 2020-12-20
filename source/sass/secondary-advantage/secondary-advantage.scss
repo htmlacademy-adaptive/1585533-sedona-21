@@ -6,14 +6,16 @@
 }
 
 .secondary-advantage:not(:last-child) {
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $secondary-advantage-line-color;
+  border-bottom: 1px solid $secondary-advantage-line-color;
 }
 
 @media (min-width: $tablet-width) {
   .secondary-advantage {
     padding-top: 42px;
     padding-bottom: 63px;
+  }
+
+  .secondary-advantage:not(:last-child) {
+    border-style: none;
   }
 }
