@@ -1,12 +1,15 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 26px;
+  background-color: $background-color;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
   }
 }

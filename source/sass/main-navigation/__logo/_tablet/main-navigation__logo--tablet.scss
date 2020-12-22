@@ -1,0 +1,17 @@
+.main-navigation__logo--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__logo--tablet {
+    position: absolute;
+    display: block;
+    width: 102px;
+    height: 84px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+}

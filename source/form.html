@@ -9,19 +9,26 @@
   </head>
   <body class="body page__body">
     <header class="page-header body__page-header">
-      <div class="page-header__logo">
-        <a href=""><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
-      </div>
       <nav class="main-navigation page-header__main-navigation">
-        <button class="main-navigation__menu-button" type="button">
-          <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
-        </button>
         <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--left">Главная</li>
-          <li class="main-navigation__item main-navigation__item--left">Фото и видео</li>
-          <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator">Форма отзыва</li>
-          <li class="main-navigation__item main-navigation__item--right">HTML ACADEMY</li>
+          <li class="main-navigation__item main-navigation__item--left"><a href="index.html">Главная</a>
+            <button class="main-navigation__close-button"><img src="img/icon-cross.svg" width="22" height="22"></button>
+          </li>
+          <li class="main-navigation__item main-navigation__item--left main-navigation__item--active"><a href="catalog.html">Фото и видео</a></li>
+          <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator"><a href="">Форма отзыва</a></li>
+          <li class="main-navigation__item main-navigation__item--right"><a href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+          <div class="page-header__logo main-navigation__logo--tablet">
+            <a href="index.html"><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+          </div>
         </ul>
+        <div class="main-navigation__menu-button-wrapper">
+          <button class="main-navigation__menu-button" type="button">
+            <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
+          </button>
+          <div class="page-header__logo main-navigation__logo--mobile">
+            <a href="index.html"><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="page-main body__page-main">
@@ -145,7 +152,7 @@
       </div>
       <div class="copyright page-footer__copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
         </a>
       </div>

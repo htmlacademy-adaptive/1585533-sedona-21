@@ -1,0 +1,8 @@
+@media (min-width: $tablet-width) {
+  .infrastructure--souvenir {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}

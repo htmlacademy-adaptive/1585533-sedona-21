@@ -1,0 +1,10 @@
+.advantages__triangle {
+  position: absolute;
+  top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__triangle {
+    display: none;
+  }
+}

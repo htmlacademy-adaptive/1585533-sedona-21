@@ -1,6 +1,12 @@
 .secondary-advantage__description {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  color: $secondary-color;
+}
+
+p.secondary-advantage__description {
+  margin-top: 0;
+  margin-bottom: 18px;
 }
