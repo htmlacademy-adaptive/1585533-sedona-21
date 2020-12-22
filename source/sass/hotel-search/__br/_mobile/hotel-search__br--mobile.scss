@@ -1,9 +1,9 @@
-.hotel-search__br--mobile {
-  display: none;
+.hotel-search__br--tablet {
+  display: inline;
 }
 
-@media (max-width: $tablet-width - 1) {
+@media (min-width: $tablet-width) {
   br.hotel-search__br--mobile {
-    display: inline;
+    display: none;
   }
 }

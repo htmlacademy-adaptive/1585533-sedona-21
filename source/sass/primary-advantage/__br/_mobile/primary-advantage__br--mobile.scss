@@ -1,9 +1,9 @@
-.primary-advantage__br--mobile {
-  display: none;
+.primary-advantage__br--tablet {
+  display: inline;
 }
 
-@media (max-width: $tablet-width - 1) {
+@media (min-width: $tablet-width) {
   br.primary-advantage__br--mobile {
-    display: inline;
+    display: none;
   }
 }
