@@ -1,10 +1,12 @@
 .photo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@media (min-width: $desktop-width) {
-  .photo {
-    position: relative;
-  }
+.photo img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
 }

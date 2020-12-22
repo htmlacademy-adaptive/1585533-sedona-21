@@ -57,7 +57,10 @@
 @import "intro/__br/_tablet/intro__br--tablet.scss";
 @import "intro/__description/intro__description.scss";
 @import "intro/__header/intro__header.scss";
+@import "intro/__main-photo/_catalog/intro__main-photo--catalog.scss";
+@import "intro/__main-photo/_index/intro__main-photo-text--index.scss";
 @import "intro/__main-photo-text/intro__main-photo-text.scss";
+@import "intro/__main-photo-text/_catalog/intro__main-photo-text--catalog.scss";
 @import "intro/__main-photo-triangle/intro__main-photo-triangle.scss";
 @import "intro/__photo-wrapper/intro__photo-wrapper.scss";
 @import "main-navigation/__close-button/main-navigation__close-button.scss";
@@ -80,6 +83,7 @@
 @import "photo/__author/photo__author.scss";
 @import "photo/__caption/photo__caption.scss";
 @import "photo/__caption/_dark/photo__caption--dark.scss";
+@import "photo/__image/photo__image.scss";
 @import "photo/__like/photo__like.scss";
 @import "photo/__like-counter/photo__like-counter.scss";
 @import "photo/__name/photo__name.scss";
