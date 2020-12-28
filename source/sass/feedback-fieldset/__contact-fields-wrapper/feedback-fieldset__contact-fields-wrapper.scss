@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback-fieldset__contact-fields-wrapper {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .feedback-fieldset__contact-fields-wrapper {
     display: grid;

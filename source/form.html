@@ -37,66 +37,89 @@
               <source srcset="img/logotype-tablet.png" media="(min-width: 768px)">
               <img src="img/logotype-mobile.png" href="" alt="Логотип Седоны">
             </picture>
-        </div>
+          </div>
         </div>
       </nav>
     </header>
       <main class="page-main body__page-main">
         <section class="intro page-main__intro intro--form">
-          <div class="intro__photo-wrapper">
-            <img src="img/main-photo.jpg" width="901" height="389" alt="Седона">
+          <div class="intro__photo-wrapper intro__photo-wrapper--form">
+            <picture class="intro__main-photo--form">
+              <source srcset="img/main-photo-desktop-form.jpg" height="289" width="100%" media="(min-width: 768px)">
+              <img class="intro__main-photo intro__main-photo--form" srcset="img/main-photo.jpg" height="158" width="320" alt="Седона">
+            </picture>
+            <picture class="intro__main-photo-text intro__main-photo-text--form">
+              <source srcset="img/sedona-text-desktop.svg" media="(min-width: 768px)">
+              <img src="img/sedona-text.svg" width=100% alt="">
+            </picture>
+            <picture class="intro__main-photo-triangle intro__main-photo-triangle--index">
+              <source srcset="img/main-photo-triangle-desktop.svg" media="(min-width: 768px)">
+              <img src="img/main-photo-triangle.svg" width="100%" height="57" alt="">
+            </picture>
           </div>
           <p class="intro__header">Оставьте свой отзыв</p>
-          <p class="intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="intro__description">Помогите нашим отелям стать лучше! <br class="intro__br--mobile">Оставьте отзыв о них, <br class="intro__br--tablet">а также о <br class="intro__br--mobile">посещенных вами <br class="intro__br--mobile">достопримечательностях</p>
         </section>
         <form class="feedback page-main__feedback">
           <fieldset class="feedback-fieldset feedback__feedback-fieldset--name">
             <label class="feedback-fieldset__intro-label">Представьтесь:</label>
-            <div class="feedback-fieldset__input-wrapper">
-              <label class="feedback-fieldset__label" for="feedback-fieldset__first-name">Имя*:</label>
-              <input class="feedback-fieldset__input" type="text" placeholder="Петр" id="feedback-fieldset__first-name">
-            </div>
-            <div class="feedback-fieldset__input-wrapper">
-              <label class="feedback-fieldset__label" for="feedback-fieldset__last-name">Фамилия*:</label>
-              <input class="feedback-fieldset__input" type="text" placeholder="Иванов" id="feedback-fieldset__last-name">
-            </div>
-            <div class="feedback-fieldset__input-wrapper">
-              <label class="feedback-fieldset__label" for="feedback-fieldset__middle-name">Отчество:</label>
-              <input class="feedback-fieldset__input" type="text" placeholder="Александрович" id="feedback-fieldset__middle-name">
+            <div class="feedback-fieldset__name-fields-wrapper">
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__first-name">Имя*:</label>
+                <input class="feedback-fieldset__input" type="text" placeholder="Петр" id="feedback-fieldset__first-name">
+              </div>
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__last-name">Фамилия*:</label>
+                <input class="feedback-fieldset__input" type="text" placeholder="Иванов" id="feedback-fieldset__last-name">
+              </div>
+              <div class="feedback-fieldset__input-wrapper">
+                <label class="feedback-fieldset__label" for="feedback-fieldset__middle-name">Отчество:</label>
+                <input class="feedback-fieldset__input" type="text" placeholder="Александрович" id="feedback-fieldset__middle-name">
+              </div>
             </div>
           </fieldset>
           <fieldset class="feedback-fieldset feedback-fieldset--contacts feedback__feedback-fieldset--contacts">
             <label class="feedback-fieldset__intro-label">Контактная информация:</label>
             <div class="feedback-fieldset__contact-fields-wrapper">
               <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--contact">
-                <label class="feedback-fieldset__label" for="feedback-fieldset__phone">Контактный телефон*:</label>
-                <input class="feedback-fieldset__input" type="tel" placeholder="Введите телефон" id="feedback-fieldset__phone">
+                <label class="feedback-fieldset__label feedback-fieldset__label--contact feedback-fieldset__label--contact--form" for="feedback-fieldset__phone">Контактный телефон*:</label>
+                <div class="feedback-fieldset__input-with-icon">
+                  <input class="feedback-fieldset__input" type="tel" placeholder="Введите телефон" id="feedback-fieldset__phone">
+                  <div class="feedback-fieldset__input-icon">
+                    <img src="img/phone-icon.svg" width=18 height=18 alt="">
+                  </div>
+                </div>
               </div>
               <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--contact">
-                <label class="feedback-fieldset__label" for="feedback-fieldset__email">Электронная почта*:</label>
-                <input class="feedback-fieldset__input" type="email" placeholder="Введите e-mail" id="feedback-fieldset__email">
+                <label class="feedback-fieldset__label feedback-fieldset__label--contact feedback-fieldset__label--contact--form" for="feedback-fieldset__email">Электронная почта*:</label>
+                <div class="feedback-fieldset__input-with-icon">
+                  <input class="feedback-fieldset__input" type="email" placeholder="Введите e-mail" id="feedback-fieldset__email">
+                  <div class="feedback-fieldset__input-icon">
+                    <img src="img/mail-icon.svg" width=16 height=12 alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="feedback-fieldset feedback__feedback-fieldset--rate">
-            <label class="feedback-fieldset__intro-label">Ваше общее впечатление:</label>
-            <ul class="feedback-fieldset__list">
+            <label class="feedback-fieldset__intro-label feedback-fieldset__intro-label--rate">Ваше общее впечатление:</label>
+            <ul class="feedback-fieldset__list feedback-fieldset__list--rate">
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__positive">Скорее положительное</label>
-                  <input class="feedback-fieldset__input" type="radio" value="positive" id="feedback-fieldset__positive">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--radio">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--radio feedback-fieldset__input--visually-hidden" type="radio" value="positive" id="feedback-fieldset__positive" checked>
+                  <label class="feedback-fieldset__label feedback-fieldset__label--radio" for="feedback-fieldset__positive">Скорее положительное</label>
                 </div>
               </li>
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__negative">Скорее отрицательное</label>
-                  <input class="feedback-fieldset__input" type="radio" value="negative" id="feedback-fieldset__negative">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--radio">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--radio feedback-fieldset__input--visually-hidden" type="radio" value="negative" id="feedback-fieldset__negative">
+                  <label class="feedback-fieldset__label feedback-fieldset__label--radio" for="feedback-fieldset__negative">Скорее отрицательное</label>
                 </div>
               </li>
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__difficult-to-answer">Затрудняюсь ответить</label>
-                  <input class="feedback-fieldset__input" type="radio" value="difficult-to-answer" id="feedback-fieldset__difficult-to-answer">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--radio">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--radio feedback-fieldset__input--visually-hidden" type="radio" value="difficult-to-answer" id="feedback-fieldset__difficult-to-answer">
+                  <label class="feedback-fieldset__label feedback-fieldset__label--radio" for="feedback-fieldset__difficult-to-answer">Затрудняюсь ответить</label>
                 </div>
               </li>
             </ul>
@@ -105,41 +128,44 @@
             <label class="feedback-fieldset__intro-label">Посещенные<br>достопримечательности:</label>
             <ul class="feedback-fieldset__list feedback-fieldset__list--attractions">
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__devils-bridge">Мост Дьявола</label>
-                  <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__devils-bridge">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--checkbox">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--checkbox feedback-fieldset__input--visually-hidden" type="checkbox" id="feedback-fieldset__devils-bridge" checked>
+                  <label class="feedback-fieldset__label feedback-fieldset__label--checkbox" for="feedback-fieldset__devils-bridge">Мост Дьявола</label>
                 </div>
               </li>
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__bell-mountain">Гора-Колокол</label>
-                  <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__bell-mountain">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--checkbox">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--checkbox feedback-fieldset__input--visually-hidden" type="checkbox" id="feedback-fieldset__bell-mountain" checked>
+                  <label class="feedback-fieldset__label feedback-fieldset__label--checkbox" for="feedback-fieldset__bell-mountain">Гора-Колокол</label>
                 </div>
               </li>
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__slide-park">Слайд-парк</label>
-                  <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__slide-park">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--checkbox">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--checkbox feedback-fieldset__input--visually-hidden" type="checkbox" id="feedback-fieldset__slide-park" checked>
+                  <label class="feedback-fieldset__label feedback-fieldset__label--checkbox" for="feedback-fieldset__slide-park">Слайд-парк</label>
                 </div>
               </li>
               <li class="feedback-fieldset__item">
-                <div class="feedback-fieldset__input-wrapper">
-                  <label class="feedback-fieldset__label" for="feedback-fieldset__red-rocks">Красные скалы</label>
-                  <input class="feedback-fieldset__input" type="checkbox" id="feedback-fieldset__red-rocks">
+                <div class="feedback-fieldset__input-wrapper feedback-fieldset__input-wrapper--checkbox">
+                  <input class="feedback-fieldset__input feedback-fieldset__input--checkbox feedback-fieldset__input--visually-hidden" type="checkbox" id="feedback-fieldset__red-rocks">
+                  <label class="feedback-fieldset__label feedback-fieldset__label--checkbox" for="feedback-fieldset__red-rocks">Красные скалы</label>
                 </div>
               </li>
             </ul>
           </fieldset>
           <fieldset class="feedback-fieldset feedback__feedback-fieldset--emotions">
             <label class="feedback-fieldset__intro-label">Опишите свои эмоции:</label>
-              <div class="feedback-field feedback-fieldset__feedback-fieldset">
-                <textarea class="feedback-fieldset__input feedback-fieldset__input--textarea" rows=5 placeholder="Опишите подробно все свои восторги" id="feedback-fieldset__description"></textarea>
-              </div>
+            <div class="feedback-fieldset__textarea-wrapper feedback-fieldset__feedback-fieldset">
+              <textarea class="feedback-fieldset__input feedback-fieldset__input--textarea" rows=5 placeholder="Опишите подробно все свои восторги" id="feedback-fieldset__description"></textarea>
+            </div>
           </fieldset>
-          <button class="feedback__submit-button" type="submit">Отправить отзыв</button>
+          <div class="feedback__submit-wrapper">
+            <button class="feedback__submit-button" type="submit">Отправить&nbsp;отзыв</button>
+            <p class="feedback__required-fields-text">*&nbsp;—&nbsp;обязательные&nbsp;поля</p>
+          </div>
         </form>
       </main>
-      <footer class="page-footer body__page-footer">
+      <footer class="page-footer body__page-footer body__page-footer--form">
         <p class="page-footer__follow">#VISITSEDONA</p>
         <div class="social page-footer__social">
           <ul class="social__list">

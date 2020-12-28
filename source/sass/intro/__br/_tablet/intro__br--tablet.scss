@@ -3,13 +3,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  br.intro__br--tablet {
+  .intro__br--tablet {
     display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
-  br.intro__br--tablet {
+  .intro__br--tablet {
     display: none;
   }
 }

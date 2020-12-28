@@ -1,4 +1,8 @@
+.photo__image {
+  display: flex;
+  justify-content: center;
+}
 
-div.photo__image {
+.photo__image img {
   max-width: 100%;
 }

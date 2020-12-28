@@ -2,18 +2,20 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: $button-color;
   background-color: $button-background-color;
+  width: 100%;
+  max-width: $tablet-width / 2;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin: auto;
 }
 
 @media (min-width: $tablet-width) {
   .feedback__submit-button {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    justify-self: flex-start;
+    margin: 0;
   }
 }
