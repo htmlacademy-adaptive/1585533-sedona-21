@@ -1,0 +1,21 @@
+.feedback__submit-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 51px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__submit-wrapper {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}

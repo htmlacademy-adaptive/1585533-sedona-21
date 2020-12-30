@@ -8,142 +8,188 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body page__body">
-    <header class="page-header body__page-header">
-      <nav class="main-navigation page-header__main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item main-navigation__item--left"><a href="index.html">Главная</a>
-            <button class="main-navigation__close-button"><img src="img/icon-cross.svg" width="22" height="22"></button>
-          </li>
-          <li class="main-navigation__item main-navigation__item--left"><a href="">Фото и видео</a></li>
-          <li class="main-navigation__item main-navigation__item--right main-navigation__item--active main-navigation__item--separator"><a href="form.html">Форма отзыва</a></li>
-          <li class="main-navigation__item main-navigation__item--right"><a href="http://htmlacademy.ru">HTML ACADEMY</a></li>
-          <div class="page-header__logo main-navigation__logo--tablet">
-            <a href="index.html"><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
+    <div class="body__page-wrapper">
+      <header class="page-header body__page-header">
+        <nav class="main-navigation page-header__main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item main-navigation__item--left"><a href="index.html">Главная</a>
+              <button class="main-navigation__close-button"><img src="img/icon-cross.svg" width="22" height="22"></button>
+            </li>
+            <li class="main-navigation__item main-navigation__item--left"><a href="">Фото и видео</a></li>
+            <li class="main-navigation__item main-navigation__item--right main-navigation__item--active main-navigation__item--separator"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-navigation__item main-navigation__item--right"><a href="http://htmlacademy.ru">HTML ACADEMY</a></li>
+            <div class="page-header__logo main-navigation__logo--tablet">
+              <a href="">
+                <picture>
+                  <source srcset="img/logotype-desktop.png" media="(min-width: 1200px)">
+                  <source srcset="img/logotype-tablet.png" media="(min-width: 768px)">
+                  <img src="img/logotype-mobile.png" href="" alt="Логотип Седоны">
+                </picture>
+              </a>
+            </div>
+          </ul>
+          <div class="main-navigation__menu-button-wrapper">
+            <button class="main-navigation__menu-button" type="button">
+              <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
+            </button>
+            <div class="page-header__logo main-navigation__logo--mobile">
+              <picture>
+                <source srcset="img/logotype-desktop.png" media="(min-width: 1200px)">
+                <source srcset="img/logotype-tablet.png" media="(min-width: 768px)">
+                <img src="img/logotype-mobile.png" href="" alt="Логотип Седоны">
+              </picture>
           </div>
-        </ul>
-        <div class="main-navigation__menu-button-wrapper">
-          <button class="main-navigation__menu-button" type="button">
-            <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
-          </button>
-          <div class="page-header__logo main-navigation__logo--mobile">
-            <a href="index.html"><img src="img/logotype-mobile.png" width="102" height="84" alt="Логотип Седоны"></a>
           </div>
+        </nav>
+      </header>
+      <main class="page-main body__page-main">
+        <section class="intro page-main__intro intro--form">
+          <div class="intro__photo-wrapper">
+            <picture>
+              <source srcset="img/main-photo-desktop.jpg" height="518" media="(min-width: 1200px)">
+              <source srcset="img/main-photo-tablet.jpg" height="518" media="(min-width: 768px)">
+              <img class="intro__main-photo" srcset="img/main-photo.jpg" alt="Седона">
+            </picture>
+            <picture class="intro__main-photo-text intro__main-photo-text--index">
+              <source srcset="img/main-photo-text-desktop.svg" height="350" media="(min-width: 768px)">
+              <img src="img/main-photo-text.svg" width=100% alt="">
+            </picture>
+            <picture class="intro__main-photo-triangle intro__main-photo-triangle--index">
+              <source srcset="img/main-photo-triangle-desktop.svg" media="(min-width: 768px)">
+              <img src="img/main-photo-triangle.svg" width="100%" height="57" alt="">
+            </picture>
+          </div>
+          <p class="intro__header">Фото и Видео</p>
+          <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </section>
+        <section class="photo-section page-main__photo-section">
+          <div class="photo photo--big photo-section__photo">
+            <div class="photo--wrapper">
+              <div class="photo__image">
+                <picture>
+                  <source srcset="img/photo-1-desktop.jpg" media="(min-width: 769px)">
+                  <source srcset="img/photo-1-tablet.jpg" media="(min-width: 321px)">
+                  <img src="img/photo-1-mobile.jpg" height=100% alt="">
+                </picture>
+              </div>
+              <div class="photo__caption">
+                <div class="photo__name-and-author">
+                  <p class="photo__name">Неродные просторы</p>
+                  <p class="photo__author">Автор фото: Борис</p>
+                </div>
+                <div class="photo__like">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                  </svg>
+                  <span class="photo__like-counter">1350</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo photo-section__photo">
+            <div class="photo--wrapper">
+              <div class="photo__image">
+                <picture>
+                  <source srcset="img/photo-2-desktop.jpg" media="(min-width: 769px)">
+                  <source srcset="img/photo-2-tablet.jpg" media="(min-width: 321px)">
+                  <img src="img/photo-2-mobile.jpg" height="100%" alt="">
+                </picture>
+              </div>
+              <div class="photo__caption">
+                <div class="photo__name-and-author">
+                  <p class="photo__name">Местная растительность</p>
+                  <p class="photo__author">Автор фото: Сергей</p>
+                </div>
+                <div class="photo__like">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                  </svg>
+                  <span class="photo__like-counter">143</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo photo-section__photo">
+            <div class="photo--wrapper">
+              <div class="photo__image">
+                <picture>
+                  <source srcset="img/photo-3-desktop.jpg" media="(min-width: 769px)">
+                  <source srcset="img/photo-3-tablet.jpg" media="(min-width: 321px)">
+                  <img src="img/photo-3-mobile.jpg" height="100%" alt="">
+                </picture>
+              </div>
+              <div class="photo__caption photo__caption--dark">
+                <div class="photo__name-and-author">
+                  <p class="photo__name">Дорога на север</p>
+                  <p class="photo__author">Автор фото: Петр</p>
+                </div>
+                <div class="photo__like">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                  </svg>
+                  <span class="photo__like-counter">96</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo photo-section__photo">
+            <div class="photo--wrapper">
+              <div class="photo__image">
+                <source srcset="img/photo-4-desktop.jpg" media="(min-width: 769px)">
+                <source srcset="img/photo-4-tablet.jpg" media="(min-width: 321px)">
+                <img src="img/photo-4-mobile.jpg" height="100%" alt="">
+              </div>
+              <div class="photo__caption">
+                <div class="photo__name-and-author">
+                  <p class="photo__name">Мост дьявола</p>
+                  <p class="photo__author">Автор фото: Антон</p>
+                </div>
+                <div class="photo__like">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+                  </svg>
+                  <span class="photo__like-counter">254</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video page-main__video">
+          <p class="video__header">Все еще сомневаетесь?</p>
+          <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video__wrapper">
+            <video></video>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer body__page-footer">
+        <p class="page-footer__follow">#VISITSEDONA</p>
+        <div class="social page-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icon-twitter.svg" width=15 height=17 alt="twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icon-facebook.svg" width=9 height=19 alt="facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="img/icon-youtube.svg" width=20 height=14 alt="youtube">
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main class="page-main body__page-main">
-      <section class="intro page-main__intro intro--form">
-        <div class="intro__photo-wrapper">
-          <img src="img/main-photo.jpg" width="901" height="389" alt="Седона">
+        <div class="copyright page-footer__copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+          </a>
         </div>
-        <p class="intro__header">Фото и Видео</p>
-        <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </section>
-      <section class="photo-section page-main__photo-section">
-        <div class="photo photo--big photo-section__photo">
-          <div class="photo__image">
-            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="">
-          </div>
-          <div class="photo__caption">
-            <div class="photo__name-and-author">
-              <p class="photo__name">Неродные просторы</p>
-              <p class="photo__author">Автор фото: Борис</p>
-            </div>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-              <span class="photo__like-counter">1350</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo photo-section__photo">
-          <div class="photo__image">
-            <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="">
-          </div>
-          <div class="photo__caption">
-            <div class="photo__name-and-author">
-              <p class="photo__name">Местная растительность</p>
-              <p class="photo__author">Автор фото: Сергей</p>
-            </div>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-              <span class="photo__like-counter">143</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo photo-section__photo">
-          <div class="photo__image">
-            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="">
-          </div>
-          <div class="photo__caption photo__caption--dark">
-            <div class="photo__name-and-author">
-              <p class="photo__name">Дорога на север</p>
-              <p class="photo__author">Автор фото: Петр</p>
-            </div>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-              <span class="photo__like-counter">96</span>
-            </div>
-          </div>
-        </div>
-        <div class="photo photo-section__photo">
-          <div class="photo__image">
-            <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="">
-          </div>
-          <div class="photo__caption">
-            <div class="photo__name-and-author">
-              <p class="photo__name">Мост дьявола</p>
-              <p class="photo__author">Автор фото: Антон</p>
-            </div>
-            <div class="photo__like">
-              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" alt="лайк" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
-              </svg>
-              <span class="photo__like-counter">254</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="video page-main__video">
-        <p class="video__header">Все еще сомневаетесь?</p>
-        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video__wrapper">
-          <video></video>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer body__page-footer">
-      <p class="page-footer__follow">#VISITSEDONA</p>
-      <div class="social page-footer__social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img src="img/icon-twitter.svg" width=15 height=17 alt="twitter">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img src="img/icon-facebook.svg" width=9 height=19 alt="facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <img src="img/icon-youtube.svg" width=20 height=14 alt="youtube">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright page-footer__copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

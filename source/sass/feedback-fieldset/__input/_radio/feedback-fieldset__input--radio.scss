@@ -1,0 +1,24 @@
+.feedback-fieldset__input--radio:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("/img/radio-button.svg");
+  background-color: $input-background-color;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+}
+
+.feedback-fieldset__input--radio:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 58px;
+  height: 58px;
+  background-color: $input-background-color;
+  border-radius: 50%;
+}

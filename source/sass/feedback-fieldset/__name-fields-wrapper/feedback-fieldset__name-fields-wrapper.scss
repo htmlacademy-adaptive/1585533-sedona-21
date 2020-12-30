@@ -1,0 +1,9 @@
+.feedback-fieldset__name-fields-wrapper {
+  margin-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-fieldset__name-fields-wrapper {
+    margin-top: 60px;
+  }
+}

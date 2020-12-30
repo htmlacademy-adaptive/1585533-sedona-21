@@ -1,9 +1,9 @@
 .intro__br--mobile {
-  display: none;
+  display: inline;
 }
 
-@media (max-width: $tablet-width - 1) {
-  br.intro__br--mobile {
-    display: inline;
+@media (min-width: $tablet-width) {
+  .intro__br--mobile {
+    display: none;
   }
 }

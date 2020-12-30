@@ -1,0 +1,9 @@
+.intro__photo-wrapper--form {
+  height: 158px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__photo-wrapper--form {
+    height: 289px;
+  }
+}

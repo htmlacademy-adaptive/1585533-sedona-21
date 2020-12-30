@@ -2,8 +2,14 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-  br.intro__br--tablet {
+@media (min-width: $tablet-width) {
+  .intro__br--tablet {
     display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__br--tablet {
+    display: none;
   }
 }

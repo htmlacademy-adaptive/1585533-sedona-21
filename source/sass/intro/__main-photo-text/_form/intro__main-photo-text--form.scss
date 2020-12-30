@@ -1,0 +1,9 @@
+.intro__main-photo-text--form {
+  top: 52px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__main-photo-text--form {
+    top: 101px;
+  }
+}

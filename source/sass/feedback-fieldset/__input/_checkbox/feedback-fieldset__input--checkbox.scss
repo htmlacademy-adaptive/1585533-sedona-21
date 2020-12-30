@@ -1,0 +1,24 @@
+.feedback-fieldset__input--checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  background-image: url("/img/checkbox.svg");
+  background-color: $input-background-color;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 5px;
+}
+
+.feedback-fieldset__input--checkbox:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  background-color: $input-background-color;
+  border-radius: 5px;
+}
