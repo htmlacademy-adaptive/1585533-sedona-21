@@ -1,12 +1,17 @@
 .photo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px $line-color;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 100%;
 }
 
-.photo img {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  object-fit: cover;
+@media (min-width: $tablet-width) {
+  .photo {
+    border-style: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

@@ -1,0 +1,17 @@
+.video__slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  width: 280px;
+  background-color: $video-over-background-color;
+}
+
+@media (min-width: $tablet-width) {
+  .video__slider {
+    background-color: $transparent-color;
+    color: $inverted-color;
+    flex-grow: 1;
+  }
+}

@@ -1,21 +1,19 @@
-.photo__image {
+.photo__image-wrapper {
   width: 280;
   height: 280;
-  object-position: cover;
-  display: block;
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .photo__image {
+  .photo__image-wrapper {
     width: 324;
     height: 267;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo__image {
+  .photo__image-wrapper {
     width: 400;
     height: 267;
   }

@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .photo__image--big,
+  .photo__image--big img,
+  img.photo__image--big {
+    width: 648;
+    height: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__image--big {
+    width: 1200;
+    height: 400;
+  }
+}

@@ -1,0 +1,23 @@
+.video__controls {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 280px;
+  display: grid;
+  grid-template-rows: 45px 66px;
+  grid-template-columns: 66px auto 66px 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__controls {
+    display: flex;
+    flex-direction: row;
+    height: 93px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: $video-over-background-color;
+  }
+}

@@ -1,9 +1,16 @@
-.intro__main-photo-text--catalog {
-  top: 60px;
+.intro__main-photo--catalog {
+  object-fit: none;
+  object-position: 0 -216px;
+  height: 158px;
+  margin: 0;
+  padding: 0;
 }
 
-img.intro__main-photo--catalog {
-  overflow: hidden;
-  height: 389px;
-  object-position: 0 -231px;
+@media (min-width: $tablet-width) {
+  .intro__main-photo--catalog {
+    object-fit: none;
+    object-position: 0 -56px;
+    height: 289px;
+    width: 100%;
+  }
 }

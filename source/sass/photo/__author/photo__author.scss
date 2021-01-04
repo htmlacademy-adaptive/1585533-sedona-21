@@ -1,4 +1,12 @@
 .photo__author {
   font-size: 14px;
   line-height: 24px;
+  margin-top: 0;
+  color: $secondary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .photo__author {
+    color: $inverted-color;
+  }
 }

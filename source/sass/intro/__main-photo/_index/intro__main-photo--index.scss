@@ -1,0 +1,12 @@
+.intro__main-photo--index {
+  height: 389px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__main-photo--index {
+    height: 518px;
+    width: 100%;
+  }
+}
