@@ -1,0 +1,18 @@
+.video__image-wrapper {
+  width: 320;
+  height: 201;
+}
+
+@media (min-width: $tablet-width) {
+  .video__image-wrapper {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__image-wrapper {
+    width: 800px;
+    height: 683px;
+  }
+}

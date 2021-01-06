@@ -1,5 +1,5 @@
 @media (min-width: $tablet-width) {
-  .feedback__feedback-fieldset--name {
+  fieldset.feedback__feedback-fieldset--name {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;

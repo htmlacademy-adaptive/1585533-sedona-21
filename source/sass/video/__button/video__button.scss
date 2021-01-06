@@ -1,0 +1,21 @@
+.video__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  border-style: none;
+  background-color: $video-background-color;
+  padding: 0;
+  color: $video-button-color;
+  fill: $video-button-color;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button {
+    width: 46px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: $transparent-color;
+    fill: white;
+  }
+}

@@ -1,0 +1,21 @@
+.video__wrapper {
+  position: relative;
+  width: 320px;
+  padding-bottom: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__wrapper {
+    box-sizing: border-box;
+    width: 648px;
+    height: 500px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    width: 800px;
+    height: 683px;
+  }
+}

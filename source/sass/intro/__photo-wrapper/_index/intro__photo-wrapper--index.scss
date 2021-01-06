@@ -1,0 +1,9 @@
+.intro__photo-wrapper--index {
+  height: 389px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__photo-wrapper--index {
+    height: 518px;
+  }
+}
