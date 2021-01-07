@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .main-navigation__item--active a {
+    color: $active-color;
+  }
+
+  .main-navigation__item--active a:hover {
+    color: $active-hover-color;
+  }
+
+  .main-navigation__item--active a:active {
+    color: $active-activate-color;
+  }
+}

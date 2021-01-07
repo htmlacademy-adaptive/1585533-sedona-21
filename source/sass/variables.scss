@@ -14,7 +14,7 @@ $button-color: white;
 $button-background-color: #81b3d2;
 $social-link-background-color: #81b3d2;
 $feedback-field-background-color: #f2f2f2;
-$text-over-photo-background-color: rgba($color, 0.3);
+$text-over-photo-background-color: rgba(0, 0, 0, 0.3);
 $photo-caption-background-color: #f2f2f2;
 $photo-caption-dark-background-color: #eaeaea;
 $transparent-color: transparent;
@@ -28,6 +28,20 @@ $video-over-background-color: rgba(0, 0, 0, 0.6);
 $video-background-color: #f2f2f2;
 $video-scale-color: rgba(255, 255, 255, 0.2);
 $video-button-color: #5c6870;
+$mobile-menu-button-color: #81b3d2;
+$mobile-menu-button-hover-color: rgba(#81b3d2, 0.6);
+$mobile-menu-button-activate-color: rgba(#81b3d2, 0.3);
+
+/* state colors */
+$hover-color: #81b3d2;
+$activate-color: rgba(black, 0.3);
+$active-color: #766357;
+$active-hover-color: #604e43;
+$active-activate-color: rgba(#766357, 0.3);
+$button-hover-background-color: #669ec0;
+$button-activate-color:  rgba(white, 0.3);
+$button-activate-background-color: #5496bd;
+$button-disabled-background-color: #e5e5e5;
 
 /* size */
 $mobile-width : 320px;

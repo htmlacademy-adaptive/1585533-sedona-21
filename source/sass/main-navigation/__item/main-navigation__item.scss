@@ -32,6 +32,17 @@
   /*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);*/
 }
 
+.main-navigation__item:hover,
+.main-navigation__item:hover a {
+  background-color: $button-hover-background-color;
+}
+
+.main-navigation__item:active,
+.main-navigation__item:active a {
+  color: $button-activate-color;
+  background-color: $button-activate-background-color;
+}
+
 @media (min-width: $tablet-width) {
   .main-navigation__item,
   .main-navigation__item a {
@@ -41,5 +52,13 @@
     width: 19.9%;
     color: $color;
     background-color: $background-color;
+  }
+
+  .main-navigation__item a:hover {
+    color: $hover-color;
+  }
+
+  .main-navigation__item a:active {
+    color: $activate-color;
   }
 }
