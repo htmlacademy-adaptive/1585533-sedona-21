@@ -12,4 +12,14 @@
   padding-bottom: 16px;
   padding-left: 22px;
   padding-right: 22px;
+  border: 4px solid $transparent-color;
+}
+
+.feedback-fieldset__input:hover {
+  background-color: $input-hover-background-color;
+}
+
+.feedback-fieldset__input:focus {
+  background-color: $inverted-color;
+  border: 4px solid $input-hover-background-color;
 }

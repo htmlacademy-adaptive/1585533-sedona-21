@@ -22,3 +22,14 @@
   background-color: $input-background-color;
   border-radius: 5px;
 }
+
+.feedback-fieldset__input--checkbox:hover + label::before {
+  background-color: $input-hover-background-color;
+}
+
+.feedback-fieldset__input--checkbox:active + label::before {
+  background-color: $input-activate-background-color;
+  background-image: url("/img/checkbox-activate.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
