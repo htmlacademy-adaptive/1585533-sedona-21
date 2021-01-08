@@ -29,8 +29,6 @@ $video-background-color: #f2f2f2;
 $video-scale-color: rgba(255, 255, 255, 0.2);
 $video-button-color: #5c6870;
 $mobile-menu-button-color: #81b3d2;
-$mobile-menu-button-hover-color: rgba(#81b3d2, 0.6);
-$mobile-menu-button-activate-color: rgba(#81b3d2, 0.3);
 
 /* state colors */
 $hover-color: #81b3d2;
@@ -42,6 +40,10 @@ $button-hover-background-color: #669ec0;
 $button-activate-color:  rgba(white, 0.3);
 $button-activate-background-color: #5496bd;
 $button-disabled-background-color: #e5e5e5;
+$mobile-menu-button-hover-color: rgba(#81b3d2, 0.6);
+$mobile-menu-button-activate-color: rgba(#81b3d2, 0.3);
+$mobile-menu-close-button-hover-color: rgba(white, 0.6);
+$mobile-menu-close-button-activate-color: rgba(white, 0.3);
 
 /* size */
 $mobile-width : 320px;

@@ -9,4 +9,23 @@
   z-index: 1;
   background-color: $transparent-color;
   border: none;
+  cursor: pointer;
+}
+
+.main-navigation__close-button svg {
+  fill: $inverted-color;
+}
+
+.main-navigation__close-button:hover svg {
+  fill: $mobile-menu-close-button-hover-color;
+}
+
+.main-navigation__close-button:active svg {
+  fill: $mobile-menu-close-button-activate-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__close-button {
+    display: none;
+  }
 }
