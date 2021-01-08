@@ -13,4 +13,19 @@
   padding-top: 14px;
   padding-bottom: 14px;
   max-width: 458px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.hotel-search__search-button:hover {
+  background-color: $button-hover-background-color;
+}
+
+.hotel-search__search-button:active {
+  color: $button-activate-color;
+  background-color: $button-activate-background-color;
+}
+
+.hotel-search__search-button:disabled {
+  background-color: $button-disabled-background-color;
 }

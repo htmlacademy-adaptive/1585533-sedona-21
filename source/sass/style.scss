@@ -68,7 +68,7 @@
 @import "infrastructure/__description/infrastructure__description.scss";
 @import "infrastructure/__description-wrapper/infrastructure__description_wrapper.scss";
 @import "infrastructure/__title/infrastructure__title.scss";
-@import "infrastructure/__icon/infrastructure__icon.scss";
+@import "infrastructure/__icon-wrapper/infrastructure__icon-wrapper.scss";
 @import "infrastructures/infrastructures.scss";
 @import "intro/__br/_desktop/intro__br--desktop.scss";
 @import "intro/__br/_mobile/intro__br--mobile.scss";
@@ -89,6 +89,7 @@
 @import "intro/intro.scss";
 @import "main-navigation/__close-button/main-navigation__close-button.scss";
 @import "main-navigation/__item/main-navigation__item.scss";
+@import "main-navigation/__item/_active/main-navigation__item--active.scss";
 @import "main-navigation/__item/_separator/main-navigation__item--separator.scss";
 @import "main-navigation/__list/main-navigation__list.scss";
 @import "main-navigation/__menu-button/main-navigation__menu-button.scss";

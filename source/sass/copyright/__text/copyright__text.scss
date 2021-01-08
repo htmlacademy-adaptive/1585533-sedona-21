@@ -4,3 +4,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.copyright__text:hover {
+  color: $hover-color;
+}
+
+.copyright__text:active {
+  color: $activate-color;
+}

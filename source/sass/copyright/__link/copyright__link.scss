@@ -1,3 +1,15 @@
 .copyright__link {
   margin-left: 12px;
 }
+
+.copyright__link svg {
+  color: $color;
+}
+
+.copyright__link:hover svg {
+  fill: $hover-color;
+}
+
+.copyright__link:active svg {
+  fill: $activate-color;
+}

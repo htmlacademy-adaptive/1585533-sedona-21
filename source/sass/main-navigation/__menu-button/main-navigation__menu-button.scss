@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: 20px;
   padding: 0;
-  background-color: transparent;
+  background-color: $transparent-color;
   border: none;
 }
 
@@ -11,4 +11,16 @@
   .main-navigation__menu-button {
     display: none;
   }
+}
+
+.main-navigation__menu-button svg {
+  fill: $mobile-menu-button-color;
+}
+
+.main-navigation__menu-button:hover svg {
+  fill: $mobile-menu-button-hover-color;
+}
+
+.main-navigation__menu-button:active svg {
+  fill: $mobile-menu-button-activate-color;
 }
