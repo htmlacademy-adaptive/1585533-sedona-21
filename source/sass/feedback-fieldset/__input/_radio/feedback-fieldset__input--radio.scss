@@ -30,7 +30,6 @@
 .feedback-fieldset__input--radio:active + label::before {
   background-color: $input-activate-background-color;
   background-image: url("/img/radio-button-active.svg");
-  background-color: $input-background-color;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
