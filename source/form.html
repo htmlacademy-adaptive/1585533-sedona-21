@@ -20,8 +20,8 @@
                 </svg>
               </button>
             </li>
-            <li class="main-navigation__item main-navigation__item--left main-navigation__item--active"><a href="catalog.html">Фото и видео</a></li>
-            <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator"><a href="">Форма отзыва</a></li>
+            <li class="main-navigation__item main-navigation__item--left"><a href="catalog.html">Фото и видео</a></li>
+            <li class="main-navigation__item main-navigation__item--right main-navigation__item--separator main-navigation__item--active"><a href="">Форма отзыва</a></li>
             <li class="main-navigation__item main-navigation__item--right"><a href="http://htmlacademy.ru">HTML ACADEMY</a></li>
             <div class="page-header__logo main-navigation__logo--tablet">
               <a href="">
@@ -51,8 +51,9 @@
         <section class="intro page-main__intro intro--form">
           <div class="intro__photo-wrapper intro__photo-wrapper--form">
             <picture class="intro__main-photo--form">
-              <source srcset="img/main-photo-desktop-form.jpg" height="289" width="100%" media="(min-width: 768px)">
-              <img class="intro__main-photo intro__main-photo--form" srcset="img/main-photo.jpg" height="158" width="320" alt="Седона">
+              <source srcset="img/main-photo-desktop-form.jpg 1x, img/main-photo-desktop-form@2x.jpg 2x" height="289" width="100%" media="(min-width: 1200px)">
+              <source srcset="img/main-photo-tablet-form.jpg 1x, img/main-photo-tablet-form@2x.jpg 2x" height="289" width="100%" media="(min-width: 768px)">
+              <img class="intro__main-photo intro__main-photo--form" src="img/main-photo-mobile-form.jpg" srcset="img/main-photo-mobile@2x.jpg 2x" height="158" width="320" alt="Седона">
             </picture>
             <picture class="intro__main-photo-text intro__main-photo-text--form">
               <source srcset="img/sedona-text-desktop.svg" media="(min-width: 768px)">

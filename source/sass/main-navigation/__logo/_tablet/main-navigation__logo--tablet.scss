@@ -15,3 +15,10 @@
     z-index: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-navigation__logo--tablet {
+    width: 187px;
+    height: 97px;
+  }
+}
