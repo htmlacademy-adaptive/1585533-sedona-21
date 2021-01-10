@@ -1,11 +1,12 @@
 const gulp = require("gulp");
+const imagemin = require("gulp-imagemin");
 const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const sass = require("gulp-sass");
+const sourcemap = require("gulp-sourcemaps");
+const webp = require("gulp-webp");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const webp = require("gulp-webp");
 
 // Styles
 
@@ -24,10 +25,24 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Images
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("dist/img"));
+}
+
+exports.images = images;
+
 // Webp
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.jpg")
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img/"));
 }

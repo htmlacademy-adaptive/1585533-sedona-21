@@ -55,8 +55,8 @@
             <li class="main-navigation__item main-navigation__item--left">
               <a href="index.html">Главная</a>
               <button class="main-navigation__close-button">
-                <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"/>
+                <svg width="23" height="23" alt="Закрыть">
+                  <use xlink:href="#mobile-menu-close-button"></use>
                 </svg>
               </button>
             </li>
@@ -66,6 +66,9 @@
             <div class="page-header__logo main-navigation__logo--tablet">
               <a href="">
                 <picture>
+                  <source type="image/webp" srcset="img/logotype-desktop.webp" media="(min-width: 1200px)">
+                  <source type="image/webp" srcset="img/logotype-tablet.webp" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/logotype-mobile.webp">
                   <source srcset="img/logotype-desktop.png" media="(min-width: 1200px)">
                   <source srcset="img/logotype-tablet.png" media="(min-width: 768px)">
                   <img src="img/logotype-mobile.png" href="" alt="Логотип Седоны">
@@ -75,10 +78,15 @@
           </ul>
           <div class="main-navigation__menu-button-wrapper">
             <button class="main-navigation__menu-button" type="button">
-              <img src="img/icon-menu.svg" width="23" height="22" alt="Меню">
+              <svg width="23" height="22" alt="Меню">
+                <use xlink:href="#mobile-menu-button"></use>
+              </svg>
             </button>
             <div class="page-header__logo main-navigation__logo--mobile">
               <picture>
+                <source type="image/webp" srcset="img/logotype-desktop.webp" media="(min-width: 1200px)">
+                <source type="image/webp" srcset="img/logotype-tablet.webp" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/logotype-mobile.webp">
                 <source srcset="img/logotype-desktop.png" media="(min-width: 1200px)">
                 <source srcset="img/logotype-tablet.png" media="(min-width: 768px)">
                 <img src="img/logotype-mobile.png" href="" alt="Логотип Седоны">
