@@ -2,8 +2,10 @@ const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const sourcemap = require("gulp-sourcemaps");
+const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -38,6 +40,17 @@ const images = () => {
 }
 
 exports.images = images;
+
+// Svg Sprite
+
+const svgSprite = () => {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img/"));
+}
+
+exports.svgSprite = svgSprite;
 
 // Webp
 
