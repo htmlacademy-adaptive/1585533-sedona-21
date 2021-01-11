@@ -5,7 +5,7 @@
   top: 0;
   width: 58px;
   height: 58px;
-  background-image: url("/img/radio-button.svg");
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0209 10.9227C20.0209 5.90217 15.9502 1.82898 10.9284 1.82898C5.90631 1.82898 1.83565 5.90215 1.83565 10.9227C1.83565 15.9459 5.90653 20.0168 10.9284 20.0168C15.95 20.0168 20.0209 15.9459 20.0209 10.9227Z' fill='%23333333' stroke='%23333333' stroke-width='3'/%3E%3C/svg%3E%0A");
   background-color: $input-background-color;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -29,7 +29,7 @@
 
 .feedback-fieldset__input--radio:active + label::before {
   background-color: $input-activate-background-color;
-  background-image: url("/img/radio-button-active.svg");
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M20.0209 10.9228C20.0209 5.90296 15.9503 1.82907 10.9284 1.82907C5.90623 1.82907 1.83574 5.90295 1.83574 10.9228C1.83574 15.9454 5.90654 20.0166 10.9284 20.0166C15.95 20.0166 20.0209 15.9454 20.0209 10.9228Z' fill='%23333333' stroke='%23333333' stroke-width='3'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
