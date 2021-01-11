@@ -19,3 +19,23 @@
     fill: white;
   }
 }
+
+.video__button:hover svg {
+  fill: $video-button-mobile-hover-color;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button:hover svg {
+    fill: $video-button-desktop-hover-color;
+  }
+}
+
+.video__button:active svg {
+  fill: $video-button-mobile-activate-color;
+}
+
+@media (min-width: $tablet-width) {
+  .video__button:active svg {
+    fill: $video-button-desktop-activate-color;
+  }
+}
