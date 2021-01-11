@@ -22,3 +22,14 @@
   background-color: $input-background-color;
   border-radius: 50%;
 }
+
+.feedback-fieldset__input--radio:hover + label::before {
+  background-color: $input-hover-background-color;
+}
+
+.feedback-fieldset__input--radio:active + label::before {
+  background-color: $input-activate-background-color;
+  background-image: url("/img/radio-button-active.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
