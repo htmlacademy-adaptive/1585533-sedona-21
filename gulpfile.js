@@ -40,6 +40,8 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Images
+
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
@@ -52,15 +54,26 @@ const images = () => {
 
 exports.images = images;
 
+// Copy images
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg,webp}")
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.copyImages = copyImages;
+
 // Webp
 
 const wepb = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img/"));
+    .pipe(gulp.dest("source/img/"));
 }
 
 exports.wepb = wepb;
+
+// Html
 
 const html = () => {
   return gulp.src("source/*.html")
@@ -70,12 +83,16 @@ const html = () => {
 
 exports.html = html;
 
+// Fonts
+
 const fonts = () => {
   return gulp.src("source/fonts/*.{woff,woff2}")
     .pipe(gulp.dest("build/fonts/"));
 }
 
 exports.fonts = fonts;
+
+// Svg Sprite
 
 const svgSprite = () => {
   return gulp.src(["source/img/**/*.svg", "!source/img/sprite.svg"])
@@ -86,15 +103,24 @@ const svgSprite = () => {
 
 exports.svgSprite = svgSprite;
 
+// Build
+
+const buildCommon = gulp.series (
+  gulp.parallel(
+    copyImages,
+    svgSprite,
+    styles,
+    html,
+    fonts
+  )
+)
+
 const build = gulp.series (
   clean,
+  wepb,
+  buildCommon,
   gulp.parallel(
-    styles,
-    images,
-    wepb,
-    html,
-    fonts,
-    svgSprite
+    images
   )
 )
 
@@ -125,7 +151,8 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  build,
+  clean,
+  buildCommon,
   server,
   watcher
 );
