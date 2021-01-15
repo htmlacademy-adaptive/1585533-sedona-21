@@ -1,0 +1,13 @@
+.main-navigation__item-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__item-gradient {
+    display: none;
+  }
+}
