@@ -1,6 +1,7 @@
 .feedback-fieldset {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
   border: none;
   border-top: 1px solid $line-color;

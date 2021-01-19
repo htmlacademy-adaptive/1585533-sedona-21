@@ -1,9 +1,9 @@
-.intro__br--desktop {
+.br--desktop {
   display: none;
 }
 
 @media (min-width: $desktop-width) {
-  .intro__br--desktop {
+  br.br--desktop {
     display: inline;
   }
 }

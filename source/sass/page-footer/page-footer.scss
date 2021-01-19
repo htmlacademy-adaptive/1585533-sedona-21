@@ -1,9 +1,10 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding-top: 38px;
-  padding-bottom: 26px;
+  padding-top: 0;
+  padding-bottom: 0;
   background-color: $background-color;
+  padding-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {

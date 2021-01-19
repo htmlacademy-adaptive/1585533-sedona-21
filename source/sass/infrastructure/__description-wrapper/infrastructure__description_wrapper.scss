@@ -3,3 +3,9 @@
   flex-direction: column;
   margin-left: 9px;
 }
+
+@media (min-width: $tablet-width) {
+  .infrastructure__description_wrapper {
+    margin-left: 0;
+  }
+}

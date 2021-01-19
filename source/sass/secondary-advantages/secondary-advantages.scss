@@ -1,11 +1,15 @@
 .secondary-advantages {
   color: $color;
   background-color: $secondary-advantage-background-color;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .secondary-advantages {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

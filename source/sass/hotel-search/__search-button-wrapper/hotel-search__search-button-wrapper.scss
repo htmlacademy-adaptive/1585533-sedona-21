@@ -2,4 +2,17 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 1px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search__search-button-wrapper {
+    margin-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-search__search-button-wrapper {
+    margin-top: 18px;
+  }
 }

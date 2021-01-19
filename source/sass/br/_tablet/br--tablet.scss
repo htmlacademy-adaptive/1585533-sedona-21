@@ -1,15 +1,15 @@
-.secondary-advantage__br--tablet {
+.br--tablet {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  br.secondary-advantage__br--tablet {
+  .br--tablet {
     display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
-  br.secondary-advantage__br--tablet {
+  .br--tablet {
     display: none;
   }
 }

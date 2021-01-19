@@ -2,7 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 26px;
   padding-bottom: 49px;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search {
+    padding-bottom: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-search {
+    padding-bottom: 67px;
+  }
 }
