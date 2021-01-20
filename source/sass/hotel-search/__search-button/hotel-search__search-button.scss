@@ -1,4 +1,5 @@
 .hotel-search__search-button {
+  font-family: $font-family;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -6,12 +7,12 @@
   text-transform: uppercase;
   color: $button-color;
   background-color: $button-background-color;
-  margin-left: 21px;
-  margin-right: 21px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 26px;
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   max-width: 458px;
   border-style: none;
   cursor: pointer;

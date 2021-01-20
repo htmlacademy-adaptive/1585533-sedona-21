@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: auto;
   margin-top: 51px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0;
-  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

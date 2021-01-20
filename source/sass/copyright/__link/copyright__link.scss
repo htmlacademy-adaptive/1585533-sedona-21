@@ -13,3 +13,9 @@
 .copyright__link:active svg {
   fill: $activate-color;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-left: 12px;
+  }
+}

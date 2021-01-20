@@ -4,9 +4,12 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
-p.secondary-advantage__description {
-  margin-top: 0;
-  margin-bottom: 18px;
+@media (min-width: $tablet-width) {
+  .secondary-advantage__description {
+    padding-top: 8px;
+  }
 }

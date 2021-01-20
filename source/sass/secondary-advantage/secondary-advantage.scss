@@ -1,8 +1,6 @@
 .secondary-advantage {
   display: flex;
   flex-direction: column;
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 
 .secondary-advantage:not(:last-child) {
@@ -11,11 +9,18 @@
 
 @media (min-width: $tablet-width) {
   .secondary-advantage {
-    padding-top: 42px;
-    padding-bottom: 63px;
+    padding-top: 0;
+    padding-bottom: 16px;
   }
 
   .secondary-advantage:not(:last-child) {
     border-style: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .secondary-advantage {
+    padding-bottom: 36px;
   }
 }

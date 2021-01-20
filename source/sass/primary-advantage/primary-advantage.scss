@@ -1,6 +1,18 @@
 .primary-advantage {
   color: $primary-advantage-color;
   background-color: $primary-advantage-background-color;
-  padding-top: 55px;
-  padding-bottom: 39px;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .primary-advantage {
+    padding-top: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .primary-advantage {
+    padding-top: 28px;
+  }
 }

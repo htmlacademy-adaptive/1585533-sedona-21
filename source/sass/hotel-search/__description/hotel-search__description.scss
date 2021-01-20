@@ -4,4 +4,12 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-search__description {
+    margin-top: 3px;
+  }
 }

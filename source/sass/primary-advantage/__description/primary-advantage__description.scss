@@ -3,4 +3,13 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .primary-advantage__description {
+    margin-top: 22px;
+    margin-bottom: 0;
+  }
 }
